@@ -7,8 +7,6 @@
 
 index.html
 - artist.html
-  - (popup)Justin John Harvey 
 - studio.html
-  - 
 - audition.html
 - about.html
