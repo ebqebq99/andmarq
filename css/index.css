@@ -1,0 +1,12 @@
+#imageSlider{position:relative; width:100vw; height: 100vh; margin:0 auto; overflow: hidden;}
+.imageSlide {background-color: #fff; width: 100%; height: 100%;}
+
+.imageSlide li {height: 100vh; max-width: 75vw; transition: 1s opacity ease-in-out;}
+.imageSlide li img {width: 100%; height: 100%; object-fit: cover;}
+.imageSlide li video {display: none; width: 100%; height: 100%; object-fit: cover;}
+.imageSlide li.slick-active img {display: none;}
+.imageSlide li.slick-active video {display: block; opacity: 1;}
+
+.slideIndicator a {box-sizing: content-box; position: absolute; top: 50%; transform: translateY(-50%); width: 40px; padding: 30px; z-index: 2;}
+.slideIndicator .prev {left: 0;}
+.slideIndicator .next {right: 0;}

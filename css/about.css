@@ -1,0 +1,85 @@
+
+section {width: 100vw; height: 100vh; font-family: "NS"}
+
+section#about {background-position: center; background-repeat: no-repeat; background-size: cover; color: #fff;}
+section#ourstory {background-color: #fff; color: #FF3901;}
+section#oursystem {background-color: #FF3901; color: #fff;}
+section#contact {color: #FF3901;}
+
+
+section .center-box {text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+section .left-box {width: 23%; max-width: 400px; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+section .left-box > h4 {font-size: 24px; line-height: 1.3;}
+section .left-box > p {font-size: 20px; margin-top: 12px; line-height:  1.45;}
+
+/* section#about */
+#about .main-title {font-size: 42px; font-weight: 400;}
+#about .sub-title {font-size: 20px; margin-top: 10px;}
+
+@media screen and (max-width: 769.0px) { 
+  #about .main-title {font-size: 32px;}
+  #about .sub-title {font-size: 13px;}
+}
+
+/* section#ourstory */
+#ourstory {cursor: none;}
+#ourstory #eyecon {position: absolute; width: 70px; height: 70px; background-size: contain; background-repeat: no-repeat; background-position: center;}
+#ourstory article {font-size: 28px; line-height: 1.562; font-weight: 500; width: calc(90% - 140px);}
+#ourstory article .info {margin-top: 40px;}
+#ourstory article em {font-family: "NHU";}
+
+@media screen and (max-width: 769.0px) { 
+  #ourstory article {width: 90%; text-align: left; font-size: 20px;}
+}
+
+/* section#oursystem */
+#oursystem .center-animation {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 66vw; height: 66vw; max-width: 604px; max-height: 604px;}
+#oursystem .center-animation > .center-animation-inner {position: relative; width: 100%; height: 100%;}
+#oursystem .circle {position: absolute; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%,-50%); border-radius: 50%; border: 2px solid white;}
+
+#oursystem .center-animation .circle0 {width: 65%; height: 65%;}
+#oursystem .center-animation .circle1 {width: 30%; height: 30%;}
+#oursystem .center-animation .circle_line {position: absolute; top: 50%; left: 50%; width: 2px; height: 50%; background-color: white;
+  animation-name:spinLine; transform-origin: top; animation-duration:3s; animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1); animation-iteration-count:infinite;
+}
+
+@media screen and (max-width: 769.0px) { 
+  #oursystem .left-box {width: 100%; max-width: 100%; top: calc(60px + 5%); left: 50%; transform: translate(-50%, 0); text-align: center;}
+  #oursystem .center-animation {top: 55%;}
+  section .left-box > h4 {font-size: 18px;}
+  section .left-box > p {font-size: 15px;}
+}
+
+/* section#contact */
+section#contact {position: relative;}
+section div#map {position: absolute; width: 50%; height: 100vh; bottom: 0; right: 0; z-index: -1;}
+#map img {position: absolute; width: 100%; height: 100%; top: 0; right: 0; object-fit: cover;}
+
+#contact .left-box {display: flex; flex-wrap: nowrap; word-break: break-all; width: 45%; font-size: 20px; font-weight: 500; line-height: 1.45; max-width: 45%;}
+#contact .left-box div {width: 50%;}
+#contact .left-box div + div {margin-left: 40px;}
+#contact .left-box > .address > p + p {margin-top: 40px;}
+
+@media screen and (max-width: 769.0px) { 
+  section div#map {width: 100%; height: 50vh; top: 0; right: 0;}
+  #contact .left-box {font-size: 15px; width: 100%; max-width: 100%; top: 60%;}
+}
+
+/* scroll */
+.intro #page-indicator li.on {display: none;}
+#page-indicator {position: fixed; right: 30px; top: 50%; transform: translate(0, -50%);}
+#page-indicator li {display: none; font-family: 'NHU'; font-size: 24px;}
+#page-indicator li.on {display: block;}
+
+#page-indicator li:nth-of-type(odd) {color: #fff;}
+#page-indicator li:nth-of-type(even) {color: #FF3901;}
+
+@media screen and (max-width: 769.0px) { 
+  #page-indicator li:nth-of-type(2) {display: none;}
+}
+
+
+@keyframes spinLine {
+  from {transform:rotate(180deg);}
+  to {transform:rotate(540deg);}
+}

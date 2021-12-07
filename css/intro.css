@@ -1,0 +1,17 @@
+.logoTopBottom {z-index: 10000;}
+.intro {overflow: hidden; pointer-events: none;}
+.intro .logo g {fill: #fff;}
+.intro .logo-top {top:50%; opacity: 1; transform: translate(-50%, -240.8%) scale(2.42);}
+.intro .logo-bottom {bottom: 50%; transform: translate(-50%, 186%) scale(2.38);}
+.intro .intro-bg {opacity: 1;}
+
+.logo{position: fixed; left: 50vw; transform: translate(-50%, 0%); transition-duration: 1.3s; transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1); z-index: 50;}
+.logo a{display: block; width: 100%; margin: 0 auto;}
+
+.logo g {fill: #FF3901; transition-property: fill; transition-duration: 0.3s; transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1);}
+.fill_orange .logo g {fill: #FF3901 !important;}
+
+.logo-top {width: 15vw; top: 26px; transform-origin: bottom; transition-property: transform, opacity, top, width;}
+.logo-bottom {width: 21vw; bottom: 21px; transform-origin: top; transition-property: transform, width, bottom;}
+.intro-bg {position: fixed; opacity: 0; width: 100%; height: 100%; background-color: #FF3901; transition-property: opacity; transition-duration: 1.3s; transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1); pointer-events: none; z-index: 40;}
+.with-transition .logo a {transition: 0.5s width ease-in-out !important; pointer-events: auto; z-index: 100;}

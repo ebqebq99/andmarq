@@ -1,0 +1,35 @@
+#audition {width: 100vw; color: #FF3901; font-family: "NS";}
+#audition {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+#audition h2.main-title {font-size: 32px; font-weight: 400; line-height: 1.133; margin-bottom: 30px;}
+#audition p.sub-title {font-size: 16px; line-height: 1.4545; margin-bottom: 30px;}
+#audition h4 {font-size: 18px; font-weight: 500; line-height: 1.4545; margin-bottom: 18px;}
+#audition p, #audition td {font-size: 16px; line-height: 1.4545;}
+#audition a {font-size: 17px; font-weight: 400; line-height: 1.4545;}
+.orange-button {color: #fff; text-transform: uppercase; background-color: #FF3901; padding: 10px 20px; box-sizing: border-box;}
+
+#main-content {position: relative;}
+#main-content > ul {display: flex; justify-content: space-between; margin: 4px 0 30px 0;}
+
+#main-content ul::after {content: ""; position: absolute; left: 0; top: 57px; width: calc(100% - 33px); height: 1px; background-color: #FF3901; z-index: -1;}
+#main-content > ul > li > span {display: inline-block; width: 26px; height: 26px; text-align: center; line-height: 29px; border: 1px solid #FF3901; background-color: #fff; border-radius: 50%; margin-bottom: 13px;}
+
+
+/* pc */
+@media screen and (min-width: 850.1px) { 
+#content-left {width: calc(50% - 100px); padding-right: 100px; float: left;}
+#content-left td {min-width: 120px;}
+
+#content-right {width: 50%; float: right; padding-bottom: 10px;}
+#content-right div:first-of-type {margin-top: 5px;}
+#content-right div:last-of-type {margin-top: 12px;}
+}
+
+/* mobile */
+@media screen and (max-width: 850.0px) {
+#content-left {margin-bottom: 30px;}
+#content-left td {min-width: 120px;}
+
+#content-right div:first-of-type {margin-top: 5px;}
+#content-right div:last-of-type {margin-top: 12px;}
+}

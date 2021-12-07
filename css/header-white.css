@@ -1,0 +1,26 @@
+/* pc #header ref:scroll-animation.js */
+@media screen and (min-width: 769.1px) { 
+  #header {color: #FF3901;}
+  #header.white {color: #FF3901;}
+  
+  #header h1 > a > img:first-child {opacity: 0;}
+  #header h1 > a > img + img {opacity: 1;}
+  #header.white h1 > a > img:first-child {opacity: 0;}
+  #header.white h1 > a > img + img {opacity: 1;}
+
+  #footer {color: #FF3901;}
+  #footer.white {color: #FF3901;}
+}
+
+/* mobile #header ref:scroll-animation.js */
+@media screen and (max-width: 769.0px) { 
+#header {height: 60px;}
+#header h1 > a > img {width: 120px;}
+#header h1 > a > img:first-child {opacity: 0;}
+#header h1 > a > img + img {opacity: 1;}
+#header.white {color: #fff;}
+
+#footer {opacity: 0;}
+#footer.white {color: #FF3901; opacity: 1;}
+}
+

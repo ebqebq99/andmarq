@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* reset */
+html {-webkit-text-size-adjust: none; text-size-adjust: none;}
+body {margin: 0; font-family: 'NHN', 'Noto Sans KR', sans-serif; color: #000000; background: #ffffff;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+a {color: inherit; text-decoration: inherit;}
+li {list-style: none;}
+img {vertical-align: middle; max-width: 100%;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle; overflow: hidden;}
+i[class^="fa"] span {position: absolute; left: -9999px;}
+.ir-hidden {position: absolute; left: -9999px;}
+
+/* inner */
+.inner-60 {position: relative; width: 60%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-65 {position: relative; width: 65%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-70 {position: relative; width: 70%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-75 {position: relative; width: 75%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-80 {position: relative; width: 80%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-85 {position: relative; width: 85%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-90 {position: relative; width: 90%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-95 {position: relative; width: 95%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.inner-98 {position: relative; width: 98%; height: 100%; left: 0; right: 0; margin: 0 auto;}
+.opacity0 {opacity: 0;}
+.opacity1 {opacity: 1;}
+
+
+/* COMMON style */
+#skip-nav {position: fixed; left: 0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.6); color: #ffffff; font-size: 16px; z-index: 100000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
+
+/* body .main*/
+.main {width: 100%;}
+
+
+@keyframes slideup {0% {bottom: -500px;} 100% {bottom: 10px;}}
+@keyframes slideuptop {0% {top: 50%; opacity: 0;} 100% {opacity: 1;}}
+@keyframes slidedown {0% {top: 100%; opacity: 0;} 100% {opacity: 1;}}
+
+@keyframes slideright {0% {left:-1000px;} 100% {left:-500px;}}
+@keyframes slideleft {0% {left:-1000px;} 100% {left:-500px;}}
+
+
+/* .tab */
+.tab a {cursor: pointer;}
+.tab .hide {display: none;}
